@@ -1,11 +1,14 @@
 package net.java.banking.dto;
+import lombok.*;
 
-import lombok.Data;
-
-import java.security.PrivilegedAction;
 @Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class AccountDto {
-    private Long id;
+
+    private long id;
     private String accountHolderName;
     private double balance;
 
