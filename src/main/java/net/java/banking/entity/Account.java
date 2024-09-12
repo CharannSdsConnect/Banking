@@ -1,16 +1,14 @@
 package net.java.banking.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Data
 @Table(name = "accounts")
 public class Account {
 
@@ -20,5 +18,6 @@ public class Account {
 
     @Column(name = "account_holder_name")
     private String accountHolderName;
+    @Column
     private double balance;
 }
